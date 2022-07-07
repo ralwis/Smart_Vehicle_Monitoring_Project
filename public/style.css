@@ -1,0 +1,267 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    text-align: center;
+    background-image: url(E-Scooter2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #393938;
+    color: white;
+    font-size: 1rem;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+}
+
+#authentication-bar{
+    background-color:mintcream;
+    padding-top: 0.5px;
+    padding-bottom: 5px;
+    color: #000000;
+}
+
+#authentication-status{
+    font-family: Comic Sans MS;
+    font-size: 20pt;
+    font-weight: bolder;
+    letter-spacing: 4px;
+}
+
+#login-form{
+    color: white;
+    font-family: Arial Black;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+#user-details{
+    color: cadetblue;
+}
+
+.content {
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    opacity: 0.9;
+    box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5);
+    padding: 5%;
+}
+
+.card:hover {
+    opacity: 1;
+ }
+
+.cards {
+    font-size: 15pt;
+    font-family: Nirmala UI;
+    font-weight: bolder;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+}
+
+.reading {
+    color: #059cc2;
+    font-family: Arial Black;
+}
+
+.date-time{
+    font-size: 0.8rem;
+    color: white;
+}
+
+.tick-text{
+    color: whitesmoke;
+    background-color: #049faa;
+    padding: 5px;
+}
+
+#cards-checkbox{
+    cursor: pointer;
+}
+
+#gauges-checkbox{
+    cursor: pointer;
+}
+
+#charts-checkbox{
+    cursor: pointer;
+}
+
+button {
+    background-color: #049faa;
+    color: white;
+    padding: 5px 30px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12pt;
+    font-weight: bold;
+}
+button:hover {
+   opacity: 0.8;
+}
+
+#error-message{
+    font-family: Lucidatypewriter;
+}
+.deletebtn{
+    background-color: #c52c2c;
+}
+
+.form-elements-container{
+    padding: 16px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+#no-of-readings{
+    color: white;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+}   
+tr, td {
+    padding: 0.25rem;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+tr:hover {
+    background-color: #ddd;
+}
+th {
+    position: sticky;
+    top: 0;
+    background-color: #50b8b4;
+    color: white;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+  
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+  
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* The Modal Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .deletebtn {
+        width: 100%;
+    }
+}
+
+.wrapper {
+    height: 30px;
+    width: 100%;
+    margin: 1000;
+    padding: 0;
+    position: relative;
+    color: #444;
+    border: 1px solid blue;
+    overflow: hidden;
+  }
+  
+.ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    animation: myfirst 4s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes myfirst {
+    0%   {background: #049faa; left: 0%; top: 50%;}
+    10%  {background: white; left: 10%; top: 30%;}
+    20%   {background: #049faa; left: 20%; top: 80%;}
+    30%  {background: white; left: 0%; top: 70%;}
+    40%   {background: #049faa; left: 40%; top: 80%;}
+    50%  {background: white; left: 30%; top: 50%;}
+    60%   {background: #049faa; left: 60%; top: 40%;}
+    70%  {background: white; left: 70%; top: 30%;}
+    80%   {background: #049faa; left: 40%; top: 20%;}
+    90%  {background: white; left: 90%; top: 70%;}
+    100%   {background: #049faa; left: 100%; top: 20%;}
+  }
+
+
+
